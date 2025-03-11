@@ -1,0 +1,80 @@
+/* General Dashboard Styles */
+body {
+    background-color: #2b2d42;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    color: #f4f7fc;
+    padding: 20px;
+}
+
+.dashboard-welcome {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.dashboard-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 250px;
+}
+
+/* Different Button Styles */
+.btn-book {
+    background-color: #f44336;
+    color: white;
+}
+.btn-book:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+.btn-appointments {
+    background-color: #4CAF50;
+    color: white;
+}
+.btn-appointments:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+.btn-reports {
+    background-color: #ff9800;
+    color: white;
+}
+.btn-reports:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+.btn-logout {
+    background-color: #008CBA;
+    color: white;
+}
+.btn-logout:hover {
+    background-color: #0277bd;
+    transform: scale(1.05);
+}

@@ -1,0 +1,78 @@
+/* Fullscreen Loading Screen */
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black; /* Dark background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo Animation Container */
+.logo-animation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Heart Icon */
+.logo-icon {
+    width: 100px; /* Adjust size */
+}
+
+/* Vertical Line */
+.logo-line {
+    width: 2px;
+    background: white;
+    height: 80px; /* Adjusted height */
+}
+
+/* Animated Text */
+.logo-text {
+    font-family: "MuchStroke", sans-serif; /* ✅ Use the correct font */
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+/* Fullscreen Loading Screen */
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo Animation Container */
+.logo-animation {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Increased gap */
+}
+
+/* Heart Icon (Logo) */
+.logo-icon {
+    width: 150px; /* Increased logo size */
+}
+
+/* Vertical Line */
+.logo-line {
+    width: 3px; /* Slightly thicker */
+    background: white;
+    height: 120px; /* Increased height */
+}
+
+/* Animated Text */
+.logo-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem; /* Increased font size */
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,195 @@
+/* General Container */
+.container {
+    position: relative;
+    width: 2000px;
+    height: 500px;
+    max-width: 250%;
+    max-height: 90vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  /* Form Containers */
+  .form-container {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(57, 54, 54);
+    padding: 40px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Adjust for Smaller Screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+    }
+  
+    .form-container,
+    .switch-container {
+      width: 100%;
+      position: relative;
+      transform: none !important;
+      height: auto;
+    }
+  
+    .switch-container {
+      order: 2;
+      padding: 20px;
+    }
+  }
+  
+  /* Login & Register Positioning */
+  .login {
+    left: 0;
+    transform: translateX(0);
+  }
+  
+  .register {
+    right: 0;
+    transform: translateX(100%);
+  }
+  
+  .switch-container {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: gold;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  
+  
+  /* Switch Panel Text */
+  .switch__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Reduce gap */
+    margin-top: -40px; /* Move upwards */
+  }
+  
+  .switch__description {
+    font-size: 14px;
+    margin-bottom: 5px; /* Reduce gap */
+  }
+  
+  /* Switch Button */
+  .switch__button {
+    background: black;
+    color: gold;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    border-radius: 30px;
+    border: 1px solid gold;
+  }
+  
+  /* Button Hover Effect */
+  .switch__button:hover {
+    background: rgb(36, 34, 34);
+    transform: translateX(-50%) scale(1.1);
+  }
+  
+  /* Slide Effect */
+  .container.register-mode .login {
+    transform: translateX(-100%);
+  }
+  
+  .container.register-mode .register {
+    transform: translateX(0);
+  }
+  
+  .container.register-mode .switch-container {
+    transform: translateX(-100%);
+  }
+  
+  /* Form Inputs & Buttons */
+  .form__input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 3px solid gold;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  
+  /* Input Hover Effects */
+  .form__input:hover,
+  .form__input:focus {
+    border-color: gold;
+    box-shadow: 0 0 8px black;
+  }
+  
+  /* Form Button */
+  .form__button {
+    width: 80%; /* Reduce width */
+    max-width: 130px; /* Limit maximum width */
+    padding: 12px; /* Keep padding balanced */
+    background: gold;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 30px; /* More curved edges */
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  /* Button Hover Effect */
+  .form__button:hover {
+    background: goldenrod;
+    transform: scale(1.05);
+  }
+  
+  
+  /* Error & Success Messages */
+  .success-message,
+  .error-message {
+    font-size: 14px;
+    margin-top: 10px;
+    color: red;
+  }
+  
+  .success-message {
+    color: green;
+  }
+  .form_title{
+    color:gold;
+  }
+  .form__span{
+    color:gold;
+  }
+  .form__link{
+    color:gold;
+  }

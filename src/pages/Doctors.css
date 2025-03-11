@@ -1,0 +1,83 @@
+/* General Container */
+.doctor-list-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #2d3436; /* Dark background */
+    color: gold;
+}
+
+/* Title Styling */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid gold;
+    background: black;
+    color: gold;
+    border-radius: 30px;
+    text-align: center;
+}
+
+/* Grid Layout */
+.doctor-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Doctor Card */
+.doctor-card {
+    position: relative;
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+/* Doctor Image */
+.doctor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Doctor Info - Hidden Initially */
+.doctor-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: gold;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.doctor-card:hover .doctor-image {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+
+.doctor-card:hover .doctor-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+.doctor-list-container {
+    margin-top: 200px; /* Push the entire section down */
+    padding: 20px;
+    text-align: center;
+}
